@@ -1,0 +1,151 @@
+/* .container {
+	width: 70% !important;
+}
+
+.itemnav {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+}
+
+.nav {
+	height: 80px;
+	background-color: #242323 !important;
+} */
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none !important;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+.container {
+	background: #242323;
+	height: 80px;
+	width: 100%;
+}
+
+.ul {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+.li a {
+	color: white;
+	font-size: 15px;
+	padding: 7px 13px;
+	border-radius: 3px;
+}
+
+.active,
+a:hover {
+	color: #525251;
+	transition: 0.5s;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+.check {
+	display: none;
+}
+
+.btn1 {
+	background: #000000;
+	color: #ffffff;
+	margin: auto 0px auto 80px;
+	line-height: 0px;
+	padding: 10px;
+	border: 1px solid #ffffff;
+	height: 46px;
+	width: 150px;
+}
+
+.btn1:hover {
+	background: #ffffff;
+	color: #000000;
+	transition: 0.5s;
+}
+
+@media (max-width: 952px) {
+	.li a {
+		font-size: 16px;
+	}
+}
+@media (max-width: 1444px) {
+	.ul {
+		width: 100%;
+	}
+}
+
+@media (max-width: 858px) {
+	.checkbtn {
+		display: block;
+	}
+	.ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all 0.5s;
+	}
+
+	.li {
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+
+	.li a {
+		font-size: 20px;
+	}
+
+	.active,
+	a:hover {
+		background: none;
+		color: #525251;
+	}
+
+	.btn1 {
+		background: #000000;
+		color: #ffffff;
+		margin: auto;
+		line-height: 0px;
+		padding: 10px;
+		border: 1px solid #ffffff;
+		height: 46px;
+		width: 150px;
+	}
+
+	.btn1:hover {
+		background: #ffffff;
+		color: #000000;
+		transition: 0.5s;
+	}
+
+	.check:checked ~ .ul {
+		left: 0;
+	}
+}
